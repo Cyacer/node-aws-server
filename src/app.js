@@ -1,10 +1,11 @@
 
-const express = require('express')
+const express = require('express');
+const path = require('path');
+
 const app = express()
 
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/index.html'));
+  });
 module.exports = app;
