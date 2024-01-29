@@ -1,0 +1,81 @@
+* {
+  background-color: #080808;
+  color: #fefefe;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: "hacked";
+  src: url(../fonts/HACKED.ttf);
+}
+.logo {
+  margin-right: 10px;
+  max-width: 60px;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  padding: 20px 0 30px 0;
+  align-items: center;
+}
+
+.navbar__container--logo {
+  flex-shrink: 1;
+  display: flex;
+  text-align: center;
+}
+
+.navbar__container--logo a {
+  display: flex;
+  align-items: center;
+  font-family: hacked;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.navbar__container li > a {
+  font-family: hacked;
+}
+
+.banner {
+  overflow: hidden;
+}
+
+.banner__container {
+  display: flex;
+}
+.banner__container li {
+  width: 80vw;
+  max-width: 800px;
+  flex-shrink: 0;
+  margin: 0 20px;
+}
+.banner__container img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
